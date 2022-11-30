@@ -1,0 +1,42 @@
+@api = http://localhost:3001/ReadingRoom
+
+GET {{api}}
+
+### update by id
+PUT {{api}}/4
+Content-Type: application/json
+
+{
+	"SName" : "Кукур",
+	"FName" : "Абхыз",
+	"LName" : "Зиданович",
+	"BDate" : "1955-02-31",
+	"DDate" : null
+}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+	"Amount" : "4",
+	"AmountOP" : "200",
+	"LId" : "1"
+}
+### take by id 
+GET {{api}}/4
+
+### take by FIO 
+GET {{api}}/ReadRoom/1
+
+### delete by id
+
+DELETE {{api}}/11
+###
+@api1 = http://localhost:3001/Bookplace
+
+GET {{api1}}/Book/1
+###
+@api2 = http://localhost:3001/Subscribe
+
+GET {{api2}}/3

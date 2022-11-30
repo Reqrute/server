@@ -1,0 +1,41 @@
+@api = http://localhost:3001/Author
+
+GET {{api}}
+
+### update by id
+PUT {{api}}/4
+Content-Type: application/json
+
+{
+	"SName" : "Кукур",
+	"FName" : "Абхыз",
+	"LName" : "Зиданович",
+	"BDate" : "1955-02-31",
+	"DDate" : null
+}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+	"SName" : "Кыкыр",
+	"FName" : "Абхызы",
+	"LName" : "Зидановичы",
+	"BDate" : "1977-09-12",
+	"DDate" : null
+}
+### take by id 
+GET {{api}}/4
+
+### take by FIO 
+GET {{api}}/null/null/null
+
+### take by FIO 
+
+GET {{api}}/Report/1
+
+### delete by id
+
+DELETE {{api}}/11
+

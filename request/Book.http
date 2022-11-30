@@ -1,0 +1,35 @@
+@api = http://localhost:3001/Book
+
+GET {{api}}
+
+### update by id
+PUT {{api}}/14
+Content-Type: application/json
+
+{
+    "RateN":"10",
+    "Comment":"Unbelivable"
+}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "RateN":"6",
+    "Comment":"hmm nice"
+}
+### take by id 
+GET {{api}}/3
+
+###
+
+GET {{api}}/Author/1
+### take by id 
+GET {{api}}/и/О
+
+
+
+### delete by id
+
+DELETE {{api}}/11

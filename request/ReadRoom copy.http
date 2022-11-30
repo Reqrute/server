@@ -1,0 +1,13 @@
+@api = http://localhost:3001
+
+GET {{api}}
+
+
+### take by id 
+GET {{api}}/4
+
+### take by FIO 
+GET {{api}}/Query6/2022-01-01/2022-12-01/Валерия/Прохорова/Петрова
+
+### delete by id
+
